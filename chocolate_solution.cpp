@@ -10,25 +10,12 @@ int main() {
 
     int rupees = 15;
     int wrappers = 0;
-    int chocolates = 0;
+    int chocolates = rupees;
     bool inital = true;
-    while(rupees>=0 && inital) {
-        
-        if(wrappers == 0) {
-            chocolates = chocolates + rupees/1;
-            rupees = 0;
-            wrappers = wrappers + chocolates;
-        }
-        else if(wrappers %3 == 0){
-            
-                chocolates = chocolates + wrappers/3;
-                wrappers = wrappers + chocolates;
-                
-        
-        }
-        else {
-            inital=false;
-        }
+    while(wrappers>=3) {
+        chocolates = chocolates + wrappers/3;
+        int remaining_wrappers = wrappers /3 ;
+        wrappers = remaining_wrappers % 3; 
     }
 
     cout<<chocolates;
