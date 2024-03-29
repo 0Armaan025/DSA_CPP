@@ -1,4 +1,1 @@
-Please enter the no of elements
-Please enter the elements
-Please enter the key
-5
+20
